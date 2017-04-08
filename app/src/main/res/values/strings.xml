@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Test3</string>
+    <string name="loc_prompt">Select Location</string>
+    <string-array name="location_array">
+        <item>Select Location</item>
+        <item>Home</item>
+        <item>NSH</item>
+        <item>Wean</item>
+        <item>UC</item>
+        <item>Doherty</item>
+        <item>Hunt</item>
+        <item>Resnik</item>
+        <item>Inoodle</item>
+    </string-array>
+</resources>

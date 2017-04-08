@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/address_email"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:background="#FFFFFFFF"
+    android:layout_marginTop="100dp"
+    >
+    <!--android:background="#AA000000"-->
+    <LinearLayout
+        android:id="@+id/data_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/dataImageIcon"
+            android:src="@drawable/email_icon"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/dataText"
+            android:text="Data Source"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/image_data"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/data_id"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/email"
+        />
+    <TextView
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/eticket"
+        android:layout_below="@+id/data_id"
+        android:text="Your E-ticket Receipt"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="100dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dataTime"
+        android:text="4:10 PM"
+        android:textSize="8sp"
+        android:layout_toRightOf="@+id/dataList"
+        android:layout_below="@+id/eticket"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dataList"
+        android:orientation="vertical"
+        android:layout_below="@+id/dataTime"
+        android:layout_toEndOf="@+id/image_data"
+        android:layout_toRightOf="@+id/image_data"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/dataText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left" android:gravity="center"
+            android:text="Event: Taylor Swift Concert"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/dataText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="left"
+            android:text="Date: 3/27/17"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/dataText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Time:9-11pm"
+            android:gravity="center"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/dataText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="center"
+            android:text="Location: Echostage, DC"
+            android:textSize="12sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancel_send"
+        android:orientation="horizontal"
+        android:layout_below="@+id/dataList">
+        <Button
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/data_close"
+            android:text="Close"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_marginLeft="150dp"/>
+        <Button
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/data_send"
+            android:text="Send"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+</RelativeLayout>
